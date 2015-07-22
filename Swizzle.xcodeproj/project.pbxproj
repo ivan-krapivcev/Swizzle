@@ -175,9 +175,9 @@
 			productReference = 1F029B4A19C58A8A00C59F65 /* Swizzle.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		1F7D638B19C466CE00A7C3A6 /* Swizzle */ = {
+		1F7D638B19C466CE00A7C3A6 /* Swizzle-OSX */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1F7D63A219C466CE00A7C3A6 /* Build configuration list for PBXNativeTarget "Swizzle" */;
+			buildConfigurationList = 1F7D63A219C466CE00A7C3A6 /* Build configuration list for PBXNativeTarget "Swizzle-OSX" */;
 			buildPhases = (
 				1F7D638719C466CE00A7C3A6 /* Sources */,
 				1F7D638819C466CE00A7C3A6 /* Frameworks */,
@@ -188,7 +188,7 @@
 			);
 			dependencies = (
 			);
-			name = Swizzle;
+			name = "Swizzle-OSX";
 			productName = Swizzle;
 			productReference = 1F7D638C19C466CE00A7C3A6 /* Swizzle.framework */;
 			productType = "com.apple.product-type.framework";
@@ -243,9 +243,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1F7D638B19C466CE00A7C3A6 /* Swizzle */,
-				1F7D639619C466CE00A7C3A6 /* SwizzleTests */,
+				1F7D638B19C466CE00A7C3A6 /* Swizzle-OSX */,
 				1F029B4919C58A8A00C59F65 /* Swizzle-iOS */,
+				1F7D639619C466CE00A7C3A6 /* SwizzleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -307,7 +307,7 @@
 /* Begin PBXTargetDependency section */
 		1F7D639A19C466CE00A7C3A6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1F7D638B19C466CE00A7C3A6 /* Swizzle */;
+			target = 1F7D638B19C466CE00A7C3A6 /* Swizzle-OSX */;
 			targetProxy = 1F7D639919C466CE00A7C3A6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -329,7 +329,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = Swizzle;
+				PRODUCT_NAME = "$(PROJECT_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -348,7 +348,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = Swizzle;
+				PRODUCT_NAME = "$(PROJECT_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -450,7 +450,7 @@
 				INFOPLIST_FILE = Swizzle/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "$(PROJECT_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -469,7 +469,7 @@
 				INFOPLIST_FILE = Swizzle/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "$(PROJECT_NAME)";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -532,7 +532,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1F7D63A219C466CE00A7C3A6 /* Build configuration list for PBXNativeTarget "Swizzle" */ = {
+		1F7D63A219C466CE00A7C3A6 /* Build configuration list for PBXNativeTarget "Swizzle-OSX" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1F7D63A319C466CE00A7C3A6 /* Debug */,
