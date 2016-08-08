@@ -8,17 +8,14 @@
 
 import XCTest
 
-class _TestCase: XCTestCase
-{
-    override func setUp()
-    {
+class _TestCase: XCTestCase {
+    override func setUp() {
         super.setUp()
-        println("\n\n\n")
+        print("\n\n\n")
     }
-    
-    override func tearDown()
-    {
-        println("\n\n\n")
+
+    override func tearDown() {
+        print("\n\n\n")
         super.tearDown()
     }
 }

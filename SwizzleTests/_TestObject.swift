@@ -8,63 +8,52 @@
 
 import Foundation
 
-extension NSObject
-{
-    func hello() -> String
-    {
+extension NSObject {
+    func hello() -> String {
         return "NSObject-hello"
     }
-    
-    func bye() -> String
-    {
+
+    func bye() -> String {
         return "NSObject-bye"
     }
-    
-    class func hello() -> String
-    {
+
+    class func hello() -> String {
         return "NSObject+hello"
     }
-    
-    class func bye() -> String
-    {
+
+    class func bye() -> String {
         return "NSObject+bye"
     }
 }
 
-class MyObject: NSObject
-{
+class MyObject: NSObject {
     // NOTE: dynamic is required for method-swizzling
-    dynamic func bonjour() -> String
-    {
+    dynamic func bonjour() -> String {
         return "MyObject-bonjour"
     }
-    
-    dynamic class func bonjour() -> String
-    {
+
+    dynamic class func bonjour() -> String {
         return "MyObject+bonjour"
     }
-    
+
     let deinitClosure: (Void -> Void)?
-    
-    init(deinitClosure: (Void -> Void)? = nil)
-    {
+
+    init(deinitClosure: (Void -> Void)? = nil) {
         self.deinitClosure = deinitClosure
         super.init()
-        
-        println("[init] \(self)")
+
+        print("[init] \(self)")
     }
-    
-    deinit
-    {
-        println("[deinit] \(self)")
-        
+
+    deinit {
+        print("[deinit] \(self)")
+
         self.deinitClosure?()
     }
-    
+
     // WARNING: swizzling `dealloc` in Swift won't work
-    dynamic func _swift_dealloc()
-    {
-        println("_swift_dealloc")
+    dynamic func _swift_dealloc() {
+        print("_swift_dealloc")
         self._swift_dealloc()
     }
 }

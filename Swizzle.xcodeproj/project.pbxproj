@@ -217,6 +217,7 @@
 		1F7D638319C466CE00A7C3A6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = "Yasuhiro Inami";
 				TargetAttributes = {
